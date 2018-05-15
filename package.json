@@ -1,0 +1,11 @@
+{
+  "name": "aperk",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:alecperkey/aperk.git",
+  "author": "Alec <alecperkey@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "portfolio-wiki": "tiddlywiki ./portfolio --verbose --server 8081 $:/core/save/all text/plain text/html & echo $! > tw.pid"
+  }
+}
