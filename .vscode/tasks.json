@@ -1,0 +1,85 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Launch Server",
+            "type": "shell",
+            "command": "./tasks/launch_server.sh",
+            "windows": {
+                "command": ".\\tasks\\launch_server.cmd"
+            },
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Rebuild",
+            "type": "shell",
+            "command": "./tasks/rebuild.sh",
+            "windows": {
+                "command": ".\\tasks\\rebuild.cmd"
+            },
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Kill Nodes",
+            "type": "shell",
+            "command": "./tasks/taskkill_nodes.sh",
+            "windows": {
+                "command": ".\\tasks\\taskkill_nodes.cmd"
+            },
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Restart Chrome Dev",
+            "type": "shell",
+            "command": "./tasks/restart_chrome_dev.sh",
+            "windows": {
+                "command": ".\\tasks\\restart_chrome_dev.cmd"
+            },
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Serve TiddlyWiki Prerelease",
+            "type": "shell",
+            "command": "./tasks/serve_tiddlywiki_prerelease.sh",
+            "windows": {
+                "command": ".\\tasks\\serve_tiddlywiki_prerelease.cmd"
+            },
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Serve Wiki",
+            "type": "shell",
+            "command": "./tasks/serve_wiki.sh",
+            "windows": {
+                "command": ".\\tasks\\serve_wiki.cmd"
+            },
+            "group": "test",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+    ]
+}
